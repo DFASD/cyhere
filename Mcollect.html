@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no" />
+<title>麒麟文化--我的收藏</title>
+<link rel="stylesheet" type="text/css" href="css/base.css"/>
+<link rel="stylesheet" type="text/css" href="css/index.css"/>
+<script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+</head>
+<body>
+  <!--header S-->
+  <header>
+     <div class="Head">
+        <a class="top-back" href="javascript:history.back(-1);"></a>
+        <div class="Hcon">
+          <h1>我的收藏</h1>
+       </div>
+       <a href="javascript:;" class="top-text J-delete">删除</a>
+     </div>
+  </header>
+  <!--header E-->
+  <div class="padt2">
+     <div class="rankbox">
+        <ul class="flex">
+           <li class="flex_div cur"><a href="javascript:;"><span>景点</span></a></li>
+           <li class="flex_div"><a href="javascript:;"><span>酒店</span></a></li>
+           <li class="flex_div"><a href="javascript:;"><span>美食</span></a></li>
+           <li class="flex_div"><a href="javascript:;"><span>购物</span></a></li>
+        </ul>
+     </div>
+     <div class="mart1">
+        <ul class="prolist1">
+            <li>
+              <div class="DeleteIcn"></div>
+              <a href="#">
+                 <div class="img"><span><img src="ImgUpload/img2.jpg" /></span></div>
+                 <div class="info">
+                     <h3>布尤可汗大旅馆1</h3>
+                     <p><i class="bg-blue">景点</i></p>
+                     <div class="about clearfix">
+                        <span class="star"><label style="width:80%"></label></span>
+                        <span>4分</span>
+                     </div>
+                 </div>
+              </a>
+            </li>
+            <li>
+              <div class="DeleteIcn"></div>
+              <a href="#">
+                 <div class="img"><span><img src="ImgUpload/img2.jpg" /></span></div>
+                 <div class="info">
+                     <h3>布尤可汗大旅馆2</h3>
+                     <p><i class="bg-blue">景点</i></p>
+                     <div class="about clearfix">
+                        <span class="star"><label style="width:60%"></label></span>
+                        <span>3分</span>
+                     </div>
+                 </div>
+              </a>
+            </li>
+            <li>
+              <div class="DeleteIcn"></div>
+              <a href="#">
+                 <div class="img"><span><img src="ImgUpload/img2.jpg" /></span></div>
+                 <div class="info">
+                     <h3>布尤可汗大旅馆3</h3>
+                     <p><i class="bg-blue">景点</i></p>
+                     <div class="about clearfix">
+                        <span class="star"><label style="width:80%"></label></span>
+                        <span>4分</span>
+                     </div>
+                 </div>
+              </a>
+            </li>
+            <li>
+              <div class="DeleteIcn"></div>
+              <a href="#">
+                 <div class="img"><span><img src="ImgUpload/img2.jpg" /></span></div>
+                 <div class="info">
+                     <h3>布尤可汗大旅馆4</h3>
+                     <p><i class="bg-blue">景点</i></p>
+                     <div class="about clearfix">
+                        <span class="star"><label style="width:60%"></label></span>
+                        <span>3分</span>
+                     </div>
+                 </div>
+              </a>
+            </li>
+            <li>
+              <div class="DeleteIcn"></div>
+              <a href="#">
+                 <div class="img"><span><img src="ImgUpload/img2.jpg" /></span></div>
+                 <div class="info">
+                     <h3>布尤可汗大旅馆5</h3>
+                     <p><i class="bg-blue">景点</i></p>
+                     <div class="about clearfix">
+                        <span class="star"><label style="width:100%"></label></span>
+                        <span>5分</span>
+                     </div>
+                 </div>
+              </a>
+            </li>
+         </ul>   
+     </div>
+  </div>
+  
+
+<script type="text/javascript">
+  $(function(){
+     $(".rankbox li").click(function(){
+	    $(this).addClass("cur").siblings().removeClass("cur")
+	 })
+	 $(".J-delete").click(function(){
+	    if($(this).html()=="删除"){
+		   $(this).html("完成");
+		   $(".DeleteIcn").show()
+		}else if($(this).html()=="完成"){
+			$(this).html("删除");
+			$(".DeleteIcn").hide()
+		 }
+	 })
+	 $(".DeleteIcn").click(function(){
+        $(this).parent().remove()
+	 })
+  })
+</script>  
+</body>
+</html>

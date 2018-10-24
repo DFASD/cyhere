@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no" />
+<title>麒麟文化--提醒消息</title>
+<link rel="stylesheet" type="text/css" href="css/base.css"/>
+<link rel="stylesheet" type="text/css" href="css/index.css"/>
+<script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+</head>
+<body>
+  <!--header S-->
+  <header>
+     <div class="Head">
+        <a class="top-back" href="javascript:history.back(-1);"></a>
+        <div class="Hcon">
+          <h1>消息</h1>
+       </div>
+       <a class="top-text" href="javascript:;">删除</a>
+     </div>
+  </header>
+  <!--header E-->
+  <div class="padt1">
+      <div class="messagebox">
+         <h2><span>今日推荐</span></h2>
+         <div class="info">
+             <div class="tit clearfix">
+                 <span class="time fd-right">2016-07-08</span>
+                 <b>塞浦路斯一瞥</b>
+             </div>
+             <div class="con">
+                <div class="mess"><p>塞浦路斯——一个恬静安逸、古风浓郁、贴近自然的岛国，对它的整体感觉是地中海那湛蓝湛蓝的天空、清澈碧透的海水，带着咸味的海风以及岛上人们宁静安详的生活。 塞浦路斯是一个有着悠久历史文化和壮观自然美景的小岛。相传这里就是 古希腊神话 恬静安逸、古风浓郁、贴近自然的岛国，对它的整体感觉是地中海那湛蓝湛蓝的天空、清澈碧透的海水，带着咸味的海风以及岛上人们宁静安详的生活。 塞浦路斯是一个有着悠久历史文化和壮观自然美景的小岛。相传这里就是 古希腊神话 中的爱与美神阿芙洛蒂特</p></div>
+                <a href="javascript:;" class="more">[更多]</a>
+             </div>
+         </div>
+      </div>
+      <div class="messagebox">
+         <h2><span>系统提醒</span></h2>
+         <div class="info">
+             <div class="tit clearfix">
+                 <span class="time fd-right">2016-06-24</span>
+                 <b>签证审核通过通知</b>
+             </div>
+             <div class="con">
+                <div class="mess"><p>您好，你的塞浦路斯七日游签证审核信息已通过，我们会在一周内发送邮件到你预留的地址，请注意查收。</p></div>
+             </div>
+         </div>
+      </div>
+  </div>
+
+
+<script type="text/javascript">
+  $(function(){
+     //展开更多
+	   $(".mess").each(function() {
+         if($(this).find("p").height()> $(this).height()){
+		   $(this).next(".more").show();
+		   $(".more").each(function(){
+               $(this).click(function(){
+			      $(this).prev(".mess").addClass("auto")
+				  $(this).hide();
+			   })  
+			})
+	   }else{
+		   $(this).next(".more").hide();
+	     }
+
+       });
+  })
+</script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no" />
+<title>麒麟文化--景点评论</title>
+<link rel="stylesheet" type="text/css" href="css/base.css"/>
+<link rel="stylesheet" type="text/css" href="css/index.css"/>
+<script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+</head>
+<body>
+  <!--header S-->
+  <header>
+     <div class="Head">
+        <a class="top-back" href="javascript:history.back(-1);"></a>
+        <div class="Hcon">
+          <h1>景点评论</h1>
+       </div>
+       <a href="#" class="top-text">发表</a>
+     </div>
+  </header>
+  <!--header E-->
+  <div class="padt1">
+     <div class="pjarea">
+         <textarea placeholder="开始分享..."></textarea>
+     </div>
+     <div class="pjstar">
+       <dl class="clearfix">
+          <dt>总体评分</dt>
+          <dd>
+            <span class="cur"><em class="Star1"></em></span>
+            <span class="cur"><em class="Star2"></em></span>
+            <span class="cur"><em class="Star3"></em></span>
+            <span class="cur"><em class="Star4"></em></span>
+            <span class=""><em class="Star5"></em></span>
+          </dd>
+       </dl>
+     </div>
+     <div class="uploadimg">
+        <h2>上传照片</h2>
+        <div class="addimg clearfix">
+            <div class="item"><span><img src="ImgUpload/user.jpg" /></span></div>
+            <div class="item">
+              <div class="UploadPic">
+                  <div class="ImagePreview"><span id="ImagePreview"></span></div>
+                  <input id="ImageInput" class="ImageInput" value="上传图片" type="file">
+                  <div class="ImageName"></div>
+              </div>
+           </div>
+         </div>
+     </div>
+  </div>
+<script type="text/javascript">
+  $(function(){
+     //评价
+	$(".pjstar dd span").click(function(){
+		$(this).addClass("cur");
+		$(this).prevAll().addClass("cur");
+		$(this).nextAll().removeClass("cur");
+	});
+		
+	$(".pjstar dd span").dblclick(function(){
+		$(".pjstar dd span").removeClass("cur");
+	});
+
+   })
+</script>
+
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no" />
+<title>麒麟文化--爱侣</title>
+<link rel="stylesheet" type="text/css" href="css/base.css"/>
+<link rel="stylesheet" type="text/css" href="css/index.css"/>
+<script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+</head>
+<body>
+  <!--header S-->
+  <header>
+     <div class="Head">
+        <a class="top-back" href="javascript:history.back(-1);"></a>
+        <div class="G_nav">
+        	<ul class="clearfix">
+			  <li class="tit2 cur">影楼</li>
+            	<li class="tit1">套餐</li>
+              
+            </ul>
+       </div>
+     </div>
+  </header>
+  <!--header E-->
+  <div class="padt1">
+      <ul class="G_con1  fd-hide">
+    	<li>
+            <div class="img"><a href="Aldetail1.html"><img src="ImgUpload/G_img1.jpg" /></a></div>
+            <div class="text">
+            	<div class="my"><img src="ImgUpload/my.jpg" /></div>
+            	<a href="Aldetail1.html">
+                    <h1>我的蓝色蜜月行-塞浦路斯</h1>
+                    <p>我们没有买自拍器，机器会发出声音，在快拍前 声音会变，我们就依据这个声音来摆姿势</p>
+                </a>
+                <div class="texttip clearfix">
+                    <span class="time fd-left">2016-05-04</span>
+                    <a class="pinj fd-right" href="Alcomment.html"><em></em>评论</a>
+                    <span class="zan fd-right"><em></em>赞</span>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="img"><a href="Aldetail2.html"><img src="ImgUpload/G_img1111.jpg" /></a></div>
+            <div class="text">
+            	<div class="my"><img src="ImgUpload/my.jpg" /></div>
+            	<a href="Aldetail2.html">
+                    <h1>我的蓝色蜜月行-塞浦路斯</h1>
+                    <p>我们没有买自拍器，机器会发出声音，在快拍前 声音会变，我们就依据这个声音来摆姿势</p>
+                </a>
+                <div class="texttip clearfix">
+                    <span class="time fd-left">2016-05-04</span>
+                    <a class="pinj fd-right" href="Alcomment.html"><em></em>评论</a>
+                    <span class="zan fd-right"><em class="on"></em>(<i>1</i>)</span>
+                </div>
+            </div>
+        </li>
+    </ul>
+      <ul class="G_con2">
+    	<li class="clearfix">
+        	<a href="Alyldetail.html">
+                <div class="img"><em><img src="ImgUpload/G_img11121.jpg" /></em></div>
+                <div class="text">
+                    <h1>本色视觉</h1>
+                    <p>本色视觉拥有独有的拍摄理念，反对浓重的修饰和刻意的摆拍，注</p>
+                </div>
+            </a>
+        </li>
+        <li class="clearfix">
+        	<a href="Alyldetail.html">
+                <div class="img"><em><img src="ImgUpload/G_img11122.jpg" /></em></div>
+                <div class="text">
+                    <h1>本色视觉</h1>
+                    <p>本色视觉拥有独有的拍摄理念，反对浓重的修饰和刻意的摆拍，注</p>
+                </div>
+            </a>
+        </li>
+    </ul>
+  </div>
+
+ 
+ <script type="text/javascript">
+   $(function(){
+	  $(".G_nav li").click(function(){
+		$(this).addClass("cur").siblings().removeClass("cur");
+		})
+		$(".tit1").click(function(){
+			$(".G_con1").show();
+			$(".G_con2").hide();
+		})
+		$(".tit2").click(function(){
+			$(".G_con2").show();
+			$(".G_con1").hide();
+		})
+	})
+ </script>
+</body>
+</html>

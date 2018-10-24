@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <title>麒麟文化--房产明细</title>
+    <link rel="stylesheet" type="text/css" href="css/base.css"/>
+    <link rel="stylesheet" type="text/css" href="css/index.css"/>
+    <script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+    <style type="text/css">
+         .top-share{
+        background: url(/images/dian.png) no-repeat center;
+        background-size:1.1111rem auto;
+        right:0;
+        }
+        .top-share1{
+        background: url(/images/dianzan.png) no-repeat center;
+        background-size:1.1111rem auto;
+        }
+        .star{
+          width:1rem;
+          height:.67rem;
+          background:url(/images/dianzan.png) no-repeat center;
+          background-size: .6667rem auto;
+        }
+    </style>
+</head>
+<body>
+<!--header S-->
+<header>
+    <div class="Head">
+        <a class="top-back" href="javascript:history.back(-1);"></a>
+        <div class="Hcon">
+            <h1>海湾公寓</h1>
+        </div>
+        <a class="top-share" href="javascript:;"></a>
+    </div>
+</header>
+<!--header E-->
+<div class="padt1">
+    <div class="Detbox">
+        <div class="tit borb1"><s></s><b>简介</b><span class="fs24 gray"></span></div>
+        <div class="prolist1 smallImg">
+            <img src="ImgUpload/img41.jpg" style="width:100%;height:auto;">
+            <p style="font-size:16px;font-family: STHeiti,Microsoft YaHei,Helvetica,Arial,sans-serif;letter-spacing: 2px;padding:10px 0px;text-indent:30px;line-height:20px;">位于古兰加塔的海湾公寓是您旅游探索黄金海岸和其周边地区的优质选择。 在这里，住客们可轻松前往市区内各大旅游、购物、餐饮地点。 酒店住宿优越的位置能够方便住客前往市区内的热门景点。
+            </p>
+        </div>
+        <div class="tit borb1"><s></s><b>服务</b><span class="fs24 gray"></span></div>
+        <div class="prolist1 smallImg">
+            <p style="font-size:16px;font-family: STHeiti,Microsoft YaHei,Helvetica,Arial,sans-serif;letter-spacing: 2px;padding:10px 0px;text-indent:30px;line-height:20px;">上网服务</p>
+            <p style="font-size:16px;font-family: STHeiti,Microsoft YaHei,Helvetica,Arial,sans-serif;letter-spacing: 2px;padding:10px 0px;text-indent:30px;line-height:20px;">停车场 (附设, 免费)</p>
+            <p style="font-size:16px;font-family: STHeiti,Microsoft YaHei,Helvetica,Arial,sans-serif;letter-spacing: 2px;padding:10px 0px;text-indent:30px;line-height:20px;">旅游服务</p>
+            <p style="font-size:16px;font-family: STHeiti,Microsoft YaHei,Helvetica,Arial,sans-serif;letter-spacing: 2px;padding:10px 0px;text-indent:30px;line-height:20px;">水疗中心</p>
+            <p style="font-size:16px;font-family: STHeiti,Microsoft YaHei,Helvetica,Arial,sans-serif;letter-spacing: 2px;padding:10px 0px;text-indent:30px;line-height:20px;">烧烤设施</p>
+        </div>
+    </div>
+
+
+</div>
+
+<!--分享弹框 S-->
+<div class="Pshare" style="display:none">
+    <div class="mask"></div>
+    <div class="sharebox">
+        <h2>分享到</h2>
+        <ul class="clearfix">
+            <li><a href="#"><img src="images/weixin.png" /></a></li>
+            <li><a href="#"><img src="images/blog.png" /></a></li>
+            <li><a href="#"><img src="images/qq.png" /></a></li>
+            <li><a href="#"><img src="images/more.png" /></a></li>
+        </ul>
+    </div>
+</div>
+<!--分享弹框 E-->
+
+<script type="text/javascript">
+    $(function(){
+        $(".Jshare").click(function(){
+            $(".Pshare").show()
+            $("body,html").css({"overflow":"hidden"});
+        })
+        $(".mask").click(function(){
+            $(".Pshare").hide()
+            $("body,html").css({"overflow":"auto"});
+        })
+    })
+    $(".top-share").click(function(){
+    $(".top-share").toggleClass("top-share1");
+  });
+</script>
+
+</body>
+</html>

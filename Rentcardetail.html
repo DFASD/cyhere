@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no" />
+<title>麒麟文化--租车详细</title>
+<link rel="stylesheet" type="text/css" href="css/base.css"/>
+<link rel="stylesheet" type="text/css" href="css/index.css"/>
+<script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+</head>
+<body>
+  <!--header S-->
+  <header>
+     <div class="Head">
+        <a class="top-back" href="javascript:history.back(-1);"></a>
+        <div class="Hcon">
+          <h1>租车详细</h1>
+       </div>
+     </div>
+  </header>
+  <!--header E-->
+  <div class="padt1">
+     <ul class="prolist1 nobg">
+        <li class="nobd">
+             <div class="img"><span><img src="ImgUpload/img5.jpg" /></span></div>
+             <div class="info">
+                 <h3>雪佛兰科鲁兹</h3>
+                 <div class="com">
+                    <span>三厢/1.6自动</span> 
+                 </div>
+                 <div class="about">
+                    <span class="price"><b>￥180</b>/日均</span>
+                 </div>
+             </div>
+          </li>
+       </ul>
+       
+      <div class="Detbox">
+         <div class="tit borb1"><s></s><b>基本参数</b></div>
+         <div class="Cbasic">
+            <p><label>品牌：</label>雪佛兰</p>
+            <p><label>车系：</label>科鲁兹 </p>
+            <p><label>年代款：</label>2010</p>
+            <p><label>配置款：</label>天地版</p>
+         </div>
+     </div>
+     
+     <div class="Detbox">
+         <div class="tit borb1"><s></s><b>车行信息</b></div>
+         <div class="Cbasic">
+            <h4>Alamo</h4>
+            <p><label>车行电话：</label>338 225 363</p>
+            <p><label>营业时间：</label>08：00-21：00</p>
+            <p><label>地    址：</label>湖北省武汉市武昌区武珞路亚贸店</p>
+         </div>
+     </div>
+     
+     
+  </div>
+
+  <!--分享弹框 S-->
+  <div class="Pshare" style="display:none">
+      <div class="mask"></div>
+      <div class="sharebox">
+          <h2>分享到</h2>
+          <ul class="clearfix">
+             <li><a href="#"><img src="images/weixin.png" /></a></li>
+             <li><a href="#"><img src="images/blog.png" /></a></li>
+             <li><a href="#"><img src="images/qq.png" /></a></li>
+             <li><a href="#"><img src="images/more.png" /></a></li>
+          </ul>
+      </div>
+  </div>
+  <!--分享弹框 E-->
+
+<script type="text/javascript">
+  $(function(){
+     $(".Jshare").click(function(){
+	    $(".Pshare").show()
+		$("body,html").css({"overflow":"hidden"});
+	 })
+	 $(".mask").click(function(){
+	    $(".Pshare").hide()
+		$("body,html").css({"overflow":"auto"});
+	 })
+  })
+</script>
+
+</body>
+</html>
